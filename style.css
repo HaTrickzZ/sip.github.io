@@ -23,7 +23,7 @@ ul li{
 float: right;
 }
 
-.home {
+.home{
   float: left;
 }
 
@@ -169,3 +169,4 @@ ul li a{
     margin: -3rem 0 0 0.2rem;
 }
 }
+
