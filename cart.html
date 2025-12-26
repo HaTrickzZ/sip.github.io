@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>Sip The Juice Shop</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Shop</a></li>
+            <li class="home"><a href="index.html" class="index"><img src="c:\Users\moham\Downloads\sip logo top.png" class="topimg"></a></li><br>
+        </ul>
+    </nav><br>
+    
+    <div class="checkout">
+        <p class="heading-out">Checkout</p><br>
+       <form id="orderForm">
+  <input name="customer_name" placeholder="Name" required>
+  <input name="phone" placeholder="Phone" required><br>
+  <input name="address" placeholder="Address" required></input>
+  <!-- Auto-filled order -->
+  <input name="order_details" id="orderDetails" required></input><br>
+  <input name="Home_Delivery" type="checkbox" id="check">
+  <label for="check">Home Delivery</label>
+
+<input name="Dine_in" type="checkbox" id="check">
+  <label for="check">Dine In</label>
+
+  <input name="Take_away" type="checkbox" id="check">
+  <label for="check">Take Away</label><br>
+ <p class="info">Free delivery on orders above &#8377;499</p>
+  <button type="submit" class="place">Place order</button>
+</form>
+    </div>
+    <div class="footer">
+        <img class="footer-img" src="C:\Users\moham\Downloads\sip logo bw.png">
+        <p class="copyright">© 2026 SipTheJuiceShop. All rights reserved.</p>
+    </div>
+    <script>
+        let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let summary = cart.map(
+  (item, i) => `${i+1}. ${item.name},`
+).join("\n");
+
+document.getElementById("orderDetails").value = summary;
+    </script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script>
+emailjs.init("YOUR_PUBLIC_KEY");
+
+document.getElementById("orderForm").addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  emailjs.sendForm(
+    "SERVICE_ID",
+    "TEMPLATE_ID",
+    this
+  ).then(() => {
+    alert("Order placed successfully! Our staff will contact you soon");
+    localStorage.removeItem("cart");
+  });
+});
+</script>
+</body>
+</html>
