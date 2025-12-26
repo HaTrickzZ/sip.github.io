@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'HumaneSemBd';
-  src: url('./Humane-SemiBold.woff2') format('woff2');
+  src: url('./fonts/Humane-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
@@ -23,7 +23,7 @@ ul li{
 float: right;
 }
 
-.home{
+.home {
   float: left;
 }
 
@@ -129,6 +129,86 @@ ul li a{
  object-fit: cover;
 }
 
+.viddiv{
+  text-align: center;
+}
+
+.vid{
+  height: 500px;
+  width: 1280px;
+  object-fit: cover;
+  border-radius: 25px;
+}
+
+.heading{
+  text-align: center;
+  font-size: 64px;
+  color:#353535;
+}
+
+.sub-heading{
+  text-align: center;
+  font-size: 32px;
+  color:#353535;
+}
+
+.item-div{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1rem 0;
+}
+
+.card-a{
+  background-color: white;
+  color:#353535;
+  height: 400px;
+  width: 330px;
+  border-radius: 25px;
+}
+
+.card-a-img{
+  height: 220px;
+  width: 220px;
+  object-fit: contain;
+}
+
+.item-name{
+  font-size: 24px;
+  padding: 0;
+  margin: 0;
+}
+
+.item-price{
+  font-size: 36px;
+  padding: 0;
+  margin: 0;
+}
+
+.mrp{
+  font-size: 18px;
+  color:#adadad;
+}
+
+.add-cart{
+  border: 1px solid;
+    border-radius: 25px;
+    padding: 8px 16px;
+    font-size: 18px;
+    font-family: 'DM Sans';
+    color: #ff3d57;
+    background-color: white;
+    margin: 1rem 0 0 0.2rem;
+}
+
+.add-cart:hover{
+    color:white;
+    background-color: #ff3d57;
+    transition-duration: 0.3s;
+    border: 1px solid;
+}
 @media (max-width: 600px) {
   .maintxt{
     font-family: 'HumaneSemBd', sans-serif;
