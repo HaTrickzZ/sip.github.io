@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <title>Sip The Juice Shop</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Shop</a></li>
+            <li class="home"><a href="index.html" class="index"><img src="c:\Users\moham\Downloads\sip logo top.png" class="topimg"></a></li><br>
+        </ul>
+    </nav><br>
+    <p class="heading">Shop</p>
+    <p class="sub-heading">Burgers</p>
+    <div class="item-div">
+        <div class="card-a">
+            <img class="card-a-img" src="C:\Users\moham\Downloads\pngwing.com.png">
+            <p class="item-name">Single Patty Burger</p>
+            <span class="item-price"><b>&#8377;129</b></span>
+            <span class="mrp"><s><b>&#8377;140</b></s></span><br>
+            <button class="add-cart" onclick="addToCart('Chicken Burger', 120)" >Add to cart</button>
+        </div>
+        <div class="card-a">
+            <img class="card-a-img" src="C:\Users\moham\Downloads\pngwing.com.png">
+            <p class="item-name">Single Patty Burger</p>
+            <span class="item-price"><b>&#8377;129</b></span>
+            <span class="mrp"><s><b>&#8377;140</b></s></span><br>
+            <button class="add-cart" onclick="addToCart('Chicken Burger', 120)" >Add to cart</button>
+        </div>
+    </div>
+    <div class="footer">
+        <img class="footer-img" src="C:\Users\moham\Downloads\sip logo bw.png">
+        <p class="copyright">© 2026 SipTheJuiceShop. All rights reserved.</p>
+    </div>
+    <script>function addToCart(name, price) {
+  let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  cart.push({ name, price });
+  localStorage.setItem("cart", JSON.stringify(cart));
+  alert("Added to cart");
+}</script>
+</body>
+</html>
