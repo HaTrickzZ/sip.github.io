@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'HumaneSemBd';
-  src: url('./fonts/Humane-SemiBold.woff2') format('woff2');
+  src: url('./Humane-SemiBold.woff2') format('woff2');
   font-weight: 600;
   font-style: normal;
 }
@@ -315,3 +315,4 @@ label{
     margin: -3rem 0 0 0.2rem;
 }
 }
+
