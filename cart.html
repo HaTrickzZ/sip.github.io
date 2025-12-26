@@ -14,7 +14,7 @@
         <ul>
             <li><a href="">About</a></li>
             <li><a href="">Shop</a></li>
-            <li class="home"><a href="index.html" class="index"><img src="c:\Users\moham\Downloads\sip logo top.png" class="topimg"></a></li><br>
+            <li class="home"><a href="index.html" class="index"><img src="sip logo top.png" class="topimg"></a></li><br>
         </ul>
     </nav><br>
     
@@ -39,7 +39,7 @@
 </form>
     </div>
     <div class="footer">
-        <img class="footer-img" src="C:\Users\moham\Downloads\sip logo bw.png">
+        <img class="footer-img" src="sip logo bw.png">
         <p class="copyright">© 2026 SipTheJuiceShop. All rights reserved.</p>
     </div>
     <script>
@@ -52,14 +52,14 @@ document.getElementById("orderDetails").value = summary;
     </script>
     <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 <script>
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("qGFwKrrtYU_feJxA9");
 
 document.getElementById("orderForm").addEventListener("submit", function(e) {
   e.preventDefault();
 
   emailjs.sendForm(
-    "SERVICE_ID",
-    "TEMPLATE_ID",
+    "service_wrd1jws",
+    "template_o2k3bpk",
     this
   ).then(() => {
     alert("Order placed successfully! Our staff will contact you soon");
@@ -68,4 +68,5 @@ document.getElementById("orderForm").addEventListener("submit", function(e) {
 });
 </script>
 </body>
+
 </html>
