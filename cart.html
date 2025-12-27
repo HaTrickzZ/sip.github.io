@@ -21,22 +21,23 @@
     <div class="checkout">
         <p class="heading-out">Checkout</p><br>
        <form id="orderForm">
-  <input name="customer_name" placeholder="Name" required>
-  <input name="phone" placeholder="Phone" required><br>
-  <input name="address" placeholder="Address" required></input>
+  <input type="text" name="customer_name" placeholder="Name" required>
+  <input type="tel" name="phone" placeholder="Phone" required>
+  <!-- Address as input -->
+  <input type="text" name="address" placeholder="Address" required>
   <!-- Auto-filled order -->
-  <input name="order_details" id="orderDetails" required></input><br>
-  <input name="Home_Delivery" type="checkbox" id="check">
-  <label for="check">Home Delivery</label>
-
-<input name="Dine_in" type="checkbox" id="check">
-  <label for="check">Dine In</label>
-
-  <input name="Take_away" type="checkbox" id="check">
-  <label for="check">Take Away</label><br>
- <p class="info">Free delivery on orders above &#8377;399</p>
-  <button type="submit" class="place">Place order</button>
+  <textarea name="order_details" id="orderDetails" readonly required></textarea>
+  <br>
+  <input type="checkbox" name="order_type" value="Home Delivery" id="home">
+  <label for="home">Home Delivery</label>
+  <input type="checkbox" name="order_type" value="Dine In" id="dine">
+  <label for="dine">Dine In</label>
+  <input type="checkbox" name="order_type" value="Take Away" id="take">
+  <label for="take">Take Away</label>
+  <p class="info">Free delivery on orders above ₹399</p>
+  <button type="submit" class="place">Place Order</button>
 </form>
+
     </div>
     <div class="footer">
         <img class="footer-img" src="sip logo bw.png">
@@ -69,6 +70,7 @@ document.getElementById("orderForm").addEventListener("submit", function(e) {
 </body>
 
 </html>
+
 
 
 
