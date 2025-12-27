@@ -144,12 +144,14 @@ ul li a{
   text-align: center;
   font-size: 64px;
   color:#353535;
+  margin: 5rem 0 0 0;
 }
 
 .sub-heading{
   text-align: center;
   font-size: 32px;
   color:#353535;
+  margin: 3rem 0 0 0;
 }
 
 .item-div{
@@ -172,8 +174,10 @@ ul li a{
 
 .card-a-img{
   height: 220px;
-  width: 220px;
-  object-fit: contain;
+  width: 330px;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+  margin: 0rem 0 0 0;
 }
 
 .item-name{
@@ -316,5 +320,6 @@ label{
     margin: -3rem 0 0 0.2rem;
 }
 }
+
 
 
