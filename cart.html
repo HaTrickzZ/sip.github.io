@@ -21,18 +21,18 @@
     <div class="checkout">
         <p class="heading-out">Checkout</p><br>
        <form id="orderForm">
-  <input type="text" name="order_id" placeholder="Name" required>
-  <input type="tel" name="cost.shipping" placeholder="Phone" required><br>
+  <input type="text" name="user_name" placeholder="Name" required>
+  <input type="tel" name="ph_no" placeholder="Phone" required><br>
   <!-- Address as input -->
-  <input type="text" name="units" placeholder="Address" required>
+  <input type="text" name="user_address" placeholder="Address" required>
   <!-- Auto-filled order -->
-  <textarea name="name" id="orderDetails" readonly required></textarea>
+  <textarea name="item_name" id="orderDetails" readonly required></textarea>
   <br>
-  <input type="checkbox" name="cost.tax" value="Home Delivery" id="home">
+  <input type="checkbox" name="user_ship" value="Home Delivery" id="home">
   <label for="home">Home Delivery</label>
-  <input type="checkbox" name="cost.tax" value="Dine In" id="dine">
+  <input type="checkbox" name="user_ship" value="Dine In" id="dine">
   <label for="dine">Dine In</label>
-  <input type="checkbox" name="cost.tax" value="Take Away" id="take">
+  <input type="checkbox" name="user_ship" value="Take Away" id="take">
   <label for="take">Take Away</label>
   <p class="info">Free delivery on orders above ₹399</p>
   <button type="submit" class="place">Place Order</button>
@@ -67,6 +67,7 @@ console.log(Object.fromEntries(new FormData(this)));
 </body>
 
 </html>
+
 
 
 
