@@ -57,7 +57,7 @@ document.getElementById("orderForm").addEventListener("submit", function(e) {
   e.preventDefault();
 console.log(Object.fromEntries(new FormData(this)));
     
-  emailjs.sendForm("service_wrd1jws", "template_o2k3bpk", this)
+  emailjs.sendForm("service_46j5geq", "template_fc8k19y", this)
     .then(() => {
       alert("Order sent");
       localStorage.removeItem("cart");
@@ -67,6 +67,7 @@ console.log(Object.fromEntries(new FormData(this)));
 </body>
 
 </html>
+
 
 
 
