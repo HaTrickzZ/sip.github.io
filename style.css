@@ -154,6 +154,7 @@ ul li a{
 
 .item-div{
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -315,4 +316,5 @@ label{
     margin: -3rem 0 0 0.2rem;
 }
 }
+
 
