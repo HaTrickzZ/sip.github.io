@@ -39,22 +39,25 @@
             <p class="item-name">Single Patty Burger</p>
             <span class="item-price"><b>&#8377;129</b></span>
             <span class="mrp"><s><b>&#8377;140</b></s></span><br>
-            <button class="add-cart" onclick="addToCart('Chicken Burger', 120)" >Add to cart</button>
+            <button class="add-cart"onclick="addToCart('Burger', 120)" >Add to cart</button>
         </div>
     </div>
     <div class="footer">
         <img class="footer-img" src="sip logo bw.png">
         <p class="copyright">© 2026 SipTheJuiceShop. All rights reserved.</p>
     </div>
-    <script>function addToCart(name, price) {
+    <script>
+function addToCart(name, price) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   cart.push({ name, price });
   localStorage.setItem("cart", JSON.stringify(cart));
   alert("Added to cart");
-}</script>
+}
+</script>
 </body>
 
 </html>
+
 
 
 
