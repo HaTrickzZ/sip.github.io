@@ -55,7 +55,8 @@ document.getElementById("orderDetails").value =
 // Submit
 document.getElementById("orderForm").addEventListener("submit", function(e) {
   e.preventDefault();
-
+console.log(Object.fromEntries(new FormData(this)));
+    
   emailjs.sendForm("service_wrd1jws", "template_o2k3bpk", this)
     .then(() => {
       alert("Order sent");
@@ -70,6 +71,7 @@ document.getElementById("orderForm").addEventListener("submit", function(e) {
 </body>
 
 </html>
+
 
 
 
