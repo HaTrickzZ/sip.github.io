@@ -103,6 +103,7 @@ ul li a{
   width: 30rem;
   object-fit: contain; 
   margin: -18rem 0 -2rem 4rem;
+  pointer-events: none;
 }
 
 .footer{
@@ -323,6 +324,7 @@ label{
     margin: -3rem 0 0 0.2rem;
 }
 }
+
 
 
 
