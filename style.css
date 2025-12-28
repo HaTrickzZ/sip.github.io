@@ -244,10 +244,10 @@ textarea{
   color: #353535;
   background-color: #fffbeb;
   border-radius: 6.25px;
-  padding: 10px;
-  margin: 0.5rem;
+  padding: 0px;
+  margin: 0rem;
   resize: none;
-  height: 37.6px;
+  height: 37px;
   width: 184px;
 }
 
@@ -324,6 +324,7 @@ label{
     margin: -3rem 0 0 0.2rem;
 }
 }
+
 
 
 
