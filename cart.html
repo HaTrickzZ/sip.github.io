@@ -28,11 +28,11 @@
   <!-- Auto-filled order -->
   <textarea name="item_name" id="orderDetails" readonly required></textarea>
   <br>
-  <input type="checkbox" name="user_ship" value="Home Delivery" id="home">
+  <input type="radio" name="user_ship" value="Home Delivery" id="home">
   <label for="home">Home Delivery</label>
-  <input type="checkbox" name="user_ship" value="Dine In" id="dine">
+  <input type="radio" name="user_ship" value="Dine In" id="dine">
   <label for="dine">Dine In</label>
-  <input type="checkbox" name="user_ship" value="Take Away" id="take">
+  <input type="radio" name="user_ship" value="Take Away" id="take">
   <label for="take">Take Away</label>
   <p class="info">Free delivery on orders above ₹399</p>
   <button type="submit" class="place">Place Order</button>
@@ -67,6 +67,7 @@ console.log(Object.fromEntries(new FormData(this)));
 </body>
 
 </html>
+
 
 
 
