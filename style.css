@@ -148,6 +148,12 @@ ul li a{
   margin: 5rem 0 0 0;
 }
 
+.sub-head-div{
+position: sticky;
+top: 0;
+background-color: #fffbeb;
+}
+
 .sub-heading{
   text-align: center;
   font-size: 32px;
@@ -324,6 +330,7 @@ label{
     margin: -3rem 0 0 0.2rem;
 }
 }
+
 
 
 
