@@ -65,6 +65,18 @@
             <button class="add-cart"  onclick="addToCart('Shawarma Rumali Roll', 120)">Add to cart</button>
             </div>
         </div>
+        <div class="card-a">
+            <img class="card-a-img" src="C:\Users\moham\Downloads\SaveClip.App_470266778_476642355488700_5228413402562178006_n.jpg">
+            <div class="contents">
+                <p class="item-name">AlfahamMandhi</p>
+             <b><span class="item-price" id="oreoPrice">&#8377;210</span></b>
+             <b><s><span class="mrp" id="priceofff"></span><br></s></b>
+             <label><input type="radio" name="oreo_size" value="quarter" data-price="₹210" onclick="document.getElementById('priceofff').innerHTML=' '" checked>Quarter</label>
+             <label><input type="radio" name="oreo_size" value="half" data-price="₹400" onclick="document.getElementById('priceofff').innerHTML='&#8377;420'">Half</label>
+              <label><input type="radio"name="oreo_size" value="full" data-price="₹780" onclick="document.getElementById('priceofff').innerHTML='&#8377;840'">Full</label>
+              <button class="add-cart" type="button" onclick="addItemToCart()">Add to cart</button>
+            </div>
+          </div>
     </div>
 
 <div class="sub-head-div"><p class="sub-heading">Starters</p></div>
@@ -104,6 +116,31 @@
         <img class="footer-img" src="sip logo bw.png">
         <p class="copyright">© 2026 SipTheJuiceShop. All rights reserved.</p>
     </div>
+
+    <script>
+const radios = document.querySelectorAll('input[name="oreo_size"]');
+const priceSpan = document.getElementById("oreoPrice");
+const mrpSpan = document.getElementById("priceoff");
+
+const mrpMap = {
+  Quarter: "",
+  Half: 420,
+  Full: 840
+};
+
+radios.forEach(radio => {
+  radio.addEventListener("change", () => {
+    priceSpan.innerText = radio.dataset.price;
+    mrpSpan.innerText = mrpMap[radio.value] || "";
+  });
+});
+
+function addItemToCart() {
+  const selected = document.querySelector('input[name="oreo_size"]:checked');
+  addToCart(`Alfaham Mandhi (${selected.value})`, selected.dataset.price);
+}
+</script>
+    
     <script>
 function addToCart(name, price) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -115,6 +152,7 @@ function addToCart(name, price) {
 </body>
 
 </html>
+
 
 
 
