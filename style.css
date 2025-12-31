@@ -202,6 +202,10 @@ background-color: #fffbeb;
   margin: 0 0 0 2rem;
 }
 
+.veg{
+  margin: 0 0 0 0.5rem;
+}
+
 .item-name{
   font-size: 24px;
   padding: 0;
@@ -345,6 +349,7 @@ label{
     margin: -3rem 0 0 0.2rem;
 }
 }
+
 
 
 
