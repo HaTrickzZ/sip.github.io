@@ -141,11 +141,12 @@ ul li a{
 
 .viddiv{
   text-align: center;
+   margin: 3rem 0 0 0;
 }
 
 .vid{
-  height: 500px;
-  width: 1280px;
+  height: auto;
+  max-width: 95vw;
   object-fit: cover;
   border-radius: 25px;
 }
@@ -344,6 +345,7 @@ label{
     margin: -3rem 0 0 0.2rem;
 }
 }
+
 
 
 
