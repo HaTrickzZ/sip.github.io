@@ -348,7 +348,16 @@ label{
     font-size: 12px;
     margin: -3rem 0 0 0.2rem;
 }
+
+.vid{
+  height: 110vw;
+  max-width: 95vw;
+  object-fit: cover;
+  border-radius: 25px;
 }
+  
+}
+
 
 
 
