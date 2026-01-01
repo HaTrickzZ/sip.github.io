@@ -56,12 +56,15 @@
         <div class="card-a">
             <img class="card-a-img" src="SaveClip.App_273857783_472333801059576_2783875623063381370_n.jpg">
             <div class="product">
-                <p class="item-name">Dragon Alfaham H<img class="veg" src="Component 4.png"></p>
-            <span class="price"><b>&#8377;320</b></span>
-            <span class="mrp"><s><b>&#8377;320</b></s></span><br>
-            <button class="add-cart"  onclick="addToCart('Dragon Alfaham', 320)">Add to cart</button>
+              <p class="item-name">Dragon Alfaham<img class="veg" src="Component 4.png"></p>
+              <b><span class="price" id="oreoPrice">&#8377;320</span></b>
+              <b><s><span class="mrp" id="priceofff"></span><br></s></b>
+              <label><input type="radio" name="dragonalfaham_size" value="quarter" data-price="" data-mrp="" checked hidden>Quarter</label>
+              <label><input type="radio" name="dragonalfaham_size" value="half" data-price="₹320" data-mrp="">Half</label>
+              <label><input type="radio"name="dragonalfaham_size" value="full" data-price="₹600" data-mrp="₹640">Full</label>
+              <button class="add-cart" type="button">Add to cart</button>
             </div>
-        </div>
+          </div>
         <div class="card-a">
             <img class="card-a-img" src="rumali shawarma.jpg">
             <div class="product">
@@ -80,6 +83,19 @@
              <label><input type="radio" name="shawaya_size" value="quarter" data-price="" data-mrp="" hidden></label>
              <label><input type="radio" name="shawaya_size" value="half" data-price="₹230" data-mrp="" checked>Half</label>
               <label><input type="radio"name="shawaya_size" value="full" data-price="₹450" data-mrp="₹460">Full</label><br>
+              <button class="add-cart" type="button">Add to cart</button>
+            </div>
+          </div>
+
+        <div class="card-a">
+            <img class="card-a-img" src="C:\Users\moham\Downloads\SaveClip.App_470266778_476642355488700_5228413402562178006_n.jpg">
+            <div class="product">
+              <p class="item-name">Kuzhi Mandhi<img class="veg" src="Component 4.png"></p>
+              <b><span class="price" id="oreoPrice">&#8377;180</span></b>
+              <b><s><span class="mrp" id="priceofff"></span><br></s></b>
+              <label><input type="radio" name="kuzhimandhi_size" value="quarter" data-price="₹180" data-mrp="" checked>Quarter</label>
+              <label><input type="radio" name="kuzhimandhi_size" value="half" data-price="₹350" data-mrp="₹360">Half</label>
+              <label><input type="radio"name="kuzhimandhi_size" value="full" data-price="₹680" data-mrp="₹720">Full</label>
               <button class="add-cart" type="button">Add to cart</button>
             </div>
           </div>
@@ -192,6 +208,7 @@ function addToCart(name, price) {
 </body>
 
 </html>
+
 
 
 
