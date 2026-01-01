@@ -44,12 +44,15 @@
         <div class="card-a">
             <img class="card-a-img" src="SaveClip.App_470266778_476642355488700_5228413402562178006_n.jpg">
             <div class="product">
-                <p class="item-name">Afghani Alfaham Q<img class="veg" src="Component 4.png"></p>
-            <span class="price"><b>&#8377;170</b></span>
-            <span class="mrp"><s><b>&#8377;170</b></s></span><br>
-            <button class="add-cart"  onclick="addToCart('Afghani Alfaham', 170)">Add to cart</button>
+              <p class="item-name">Afghani Alfaham<img class="veg" src="Component 4.png"></p>
+              <b><span class="price" id="oreoPrice">&#8377;170</span></b>
+              <b><s><span class="mrp" id="priceofff"></span><br></s></b>
+              <label><input type="radio" name="afghanialfaham_size" value="quarter" data-price="₹170" data-mrp="" checked>Quarter</label>
+              <label><input type="radio" name="afghanialfaham_size" value="half" data-price="₹320" data-mrp="₹340">Half</label>
+              <label><input type="radio"name="afghanialfaham_size" value="full" data-price="₹600" data-mrp="₹680">Full</label>
+              <button class="add-cart" type="button">Add to cart</button>
             </div>
-        </div>
+          </div>
         <div class="card-a">
             <img class="card-a-img" src="SaveClip.App_273857783_472333801059576_2783875623063381370_n.jpg">
             <div class="product">
@@ -63,9 +66,9 @@
             <img class="card-a-img" src="rumali shawarma.jpg">
             <div class="product">
                 <p class="item-name">Shawarma Rumali Roll<img class="veg" src="Component 4.png"></p>
-            <span class="price"><b>&#8377;120</b></span>
-            <span class="mrp"><s><b>&#8377;120</b></s></span><br>
-            <button class="add-cart"  onclick="addToCart('Shawarma Rumali Roll', 120)">Add to cart</button>
+            <span class="price"><b>&#8377;130</b></span>
+            <span class="mrp"><s><b>&#8377;</b></s></span><br>
+            <button class="add-cart"  onclick="addToCart('Shawarma Rumali Roll', 130)">Add to cart</button>
             </div>
         </div>
         <div class="card-a">
@@ -189,6 +192,7 @@ function addToCart(name, price) {
 </body>
 
 </html>
+
 
 
 
