@@ -184,18 +184,20 @@ background-color: #fffbeb;
 .card-a{
   background-color: white;
   color:#353535;
-  height: 400px;
+  height: 410px;
   width: 330px;
   border-radius: 25px;
-  text-align: left;
+  text-align:left;
+  
 }
 
 .card-a-img{
-  height: 220px;
+  height: 215px;
   width: 330px;
   object-fit: cover;
   border-radius: 25px 25px 0 0;
   margin: 0rem 0 0 0;
+  pointer-events: none;
 }
 
 .product{
@@ -218,6 +220,12 @@ background-color: #fffbeb;
   margin: 0;
 }
 
+.description{
+  font-size: 14px;
+  color:#adadad;
+  line-height: 0px;
+}
+
 .mrp{
   font-size: 18px;
   color:#adadad;
@@ -225,13 +233,14 @@ background-color: #fffbeb;
 
 .add-cart{
   border: 1px solid;
+  cursor: pointer;
     border-radius: 25px;
     padding: 8px 16px;
     font-size: 18px;
     font-family: 'DM Sans';
     color: #ff3d57;
     background-color: white;
-    margin: 1rem 0 0 0.2rem;
+    margin: 0.5rem 0 0 0;
 }
 
 .add-cart:hover{
@@ -371,6 +380,7 @@ label{
 }
   
 }
+
 
 
 
