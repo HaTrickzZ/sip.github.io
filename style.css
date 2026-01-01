@@ -355,8 +355,23 @@ label{
   object-fit: cover;
   border-radius: 25px;
 }
+
+.heading{
+  text-align: center;
+  font-size: 46px;
+  color:#353535;
+  margin: 3rem 0 0 0;
+}
+
+.sub-heading{
+  text-align: center;
+  font-size: 24px;
+  color:#353535;
+  margin: 1rem 0 0 0;
+}
   
 }
+
 
 
 
