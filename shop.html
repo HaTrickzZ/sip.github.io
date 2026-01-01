@@ -210,23 +210,15 @@
         </div>
 
         <div class="card-a">
-              <img class="card-a-img" src="C:\Users\moham\Downloads\SaveClip.App_491417024_1061315329175108_5155943689341825508_n.jpg">
-              <div class="product">
-                <p class="item-name">Chicken Momos<img class="veg" src="Component 4.png"></p>
-                <span class="price"><b>&#8377;120</b></span>
-                <span class="mrp"><s><b></b></s></span><br>
-                <button class="add-cart" onclick="addToCart('Chicken Momos', 120)" >Add to cart</button>
-              </div>  
-        </div>
-
-        <div class="card-a">
-              <img class="card-a-img" src="C:\Users\moham\Downloads\SaveClip.App_491417024_1061315329175108_5155943689341825508_n.jpg">
-              <div class="product">
-                <p class="item-name">Veg Momos<img class="veg" src="Component 2.png"></p>
-                <span class="price"><b>&#8377;100</b></span>
-                <span class="mrp"><s><b></b></s></span><br>
-                <button class="add-cart" onclick="addToCart('Veg Momos', 100)" >Add to cart</button>
-              </div>  
+            <img class="card-a-img" src="C:\Users\moham\Downloads\SaveClip.App_470266778_476642355488700_5228413402562178006_n.jpg">
+            <div class="product">
+                <p class="item-name">Momos</p>
+             <b><span class="price" id="oreoPrice">&#8377;120</span></b>
+             <b><s><span class="mrp" id="priceofff"></span><br></s></b>
+             <label><input type="radio" name="momos_size" value="non_veg" data-price="₹120" data-mrp="" checked>Non Veg<img class="veg" src="Component 4.png"></label>
+              <label><input type="radio"name="momos_size" value="Veg" data-price="₹100" data-mrp="">Veg<img class="veg" src="Component 2.png"></label><br>
+              <button class="add-cart" type="button">Add to cart</button>
+            </div>
         </div>
 
         <div class="card-a">
@@ -297,6 +289,7 @@ function addToCart(name, price) {
 </body>
 
 </html>
+
 
 
 
