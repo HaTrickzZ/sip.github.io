@@ -164,31 +164,89 @@
         <div class="card-a">
             <img class="card-a-img" src="french fries 2.jpg">
             <div class="product">
-                <p class="item-name">French Fries M<img class="veg" src="Component 2.png"></p>
-            <span class="price"><b>&#8377;80</b></span>
-            <span class="mrp"><s><b>&#8377;80</b></s></span><br>
-            <button class="add-cart" onclick="addToCart('French Fries M', 80)" >Add to cart</button>
+                <p class="item-name">French Fries<img class="veg" src="Component 2.png"></p>
+             <b><span class="price" id="oreoPrice">&#8377;80</span></b>
+             <b><s><span class="mrp" id="priceofff"></span><br></s></b>
+             <label><input type="radio" name="frenchfries_size" value="medium" data-price="₹80" data-mrp="" checked>Medium</label>
+              <label><input type="radio"name="frenchfries_size" value="large" data-price="₹160" data-mrp="">Large</label><br>
+              <button class="add-cart" type="button">Add to cart</button>
             </div>
-            
         </div>
-        <div class="card-a">
-            <img class="card-a-img" src="nuggets.jpg">
-            <div class="product">
-                <p class="item-name">Chicken Nuggets M<img class="veg" src="Component 4.png"></p>
-            <span class="price"><b>&#8377;110</b></span>
-            <span class="mrp"><s><b>&#8377;110</b></s></span><br>
-            <button class="add-cart" onclick="addToCart('Nuggets M', 110)" >Add to cart</button>
-            </div>
-            
-        </div>
+
         <div class="card-a">
             <img class="card-a-img" src="C:\Users\moham\Downloads\SaveClip.App_470266778_476642355488700_5228413402562178006_n.jpg">
             <div class="product">
-                <p class="item-name">Chicken Popcorn M<img class="veg" src="Component 4.png"></p>
-            <span class="price"><b>&#8377;80</b></span>
-            <span class="mrp"><s><b>&#8377;80</b></s></span><br>
-            <button class="add-cart"  onclick="addToCart('Chicken Popcorn M', 80)">Add to cart</button>
+                <p class="item-name">Spicy Fries<img class="veg" src="Component 2.png"></p>
+             <b><span class="price" id="oreoPrice">&#8377;90</span></b>
+             <b><s><span class="mrp" id="priceofff"></span><br></s></b>
+             <label><input type="radio" name="spicyfries_size" value="medium" data-price="₹90" data-mrp="" checked>Medium</label>
+              <label><input type="radio"name="spicyfries_size" value="large" data-price="₹180" data-mrp="">Large</label><br>
+              <button class="add-cart" type="button">Add to cart</button>
             </div>
+        </div>
+
+        <div class="card-a">
+            <img class="card-a-img" src="nuggets.jpg">
+            <div class="product">
+                <p class="item-name">Chicken Nuggets<img class="veg" src="Component 4.png"></p>
+             <b><span class="price" id="oreoPrice">&#8377;110</span></b>
+             <b><s><span class="mrp" id="priceofff"></span><br></s></b>
+             <label><input type="radio" name="chickennuggets_size" value="medium" data-price="₹110" data-mrp="" checked>Medium</label>
+              <label><input type="radio"name="chickennuggets_size" value="large" data-price="₹210" data-mrp="220">Large</label><br>
+              <button class="add-cart" type="button">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="card-a">
+            <img class="card-a-img" src="C:\Users\moham\Downloads\SaveClip.App_470266778_476642355488700_5228413402562178006_n.jpg">
+            <div class="product">
+                <p class="item-name">Chicken Popcorn<img class="veg" src="Component 4.png"></p>
+             <b><span class="price" id="oreoPrice">&#8377;80</span></b>
+             <b><s><span class="mrp" id="priceofff"></span><br></s></b>
+             <label><input type="radio" name="chickenpopcorn_size" value="medium" data-price="₹80" data-mrp="" checked>Medium</label>
+              <label><input type="radio"name="chickenpopcorn_size" value="large" data-price="₹150" data-mrp="160">Large</label><br>
+              <button class="add-cart" type="button">Add to cart</button>
+            </div>
+        </div>
+
+        <div class="card-a">
+              <img class="card-a-img" src="C:\Users\moham\Downloads\SaveClip.App_491417024_1061315329175108_5155943689341825508_n.jpg">
+              <div class="product">
+                <p class="item-name">Chicken Momos<img class="veg" src="Component 4.png"></p>
+                <span class="price"><b>&#8377;120</b></span>
+                <span class="mrp"><s><b></b></s></span><br>
+                <button class="add-cart" onclick="addToCart('Chicken Momos', 120)" >Add to cart</button>
+              </div>  
+        </div>
+
+        <div class="card-a">
+              <img class="card-a-img" src="C:\Users\moham\Downloads\SaveClip.App_491417024_1061315329175108_5155943689341825508_n.jpg">
+              <div class="product">
+                <p class="item-name">Veg Momos<img class="veg" src="Component 2.png"></p>
+                <span class="price"><b>&#8377;100</b></span>
+                <span class="mrp"><s><b></b></s></span><br>
+                <button class="add-cart" onclick="addToCart('Veg Momos', 100)" >Add to cart</button>
+              </div>  
+        </div>
+
+        <div class="card-a">
+              <img class="card-a-img" src="C:\Users\moham\Downloads\SaveClip.App_491417024_1061315329175108_5155943689341825508_n.jpg">
+              <div class="product">
+                <p class="item-name">PeriPeri Momos<img class="veg" src="Component 4.png"></p>
+                <span class="price"><b>&#8377;150</b></span>
+                <span class="mrp"><s><b></b></s></span><br>
+                <button class="add-cart" onclick="addToCart('PeriPeri Momos', 150)" >Add to cart</button>
+              </div>  
+        </div>
+
+        <div class="card-a">
+              <img class="card-a-img" src="C:\Users\moham\Downloads\SaveClip.App_491417024_1061315329175108_5155943689341825508_n.jpg">
+              <div class="product">
+                <p class="item-name">Loaded Fries</p>
+                <span class="price"><b>&#8377;190</b></span>
+                <span class="mrp"><s><b></b></s></span><br>
+                <button class="add-cart" onclick="addToCart('Loaded Fries', 190)" >Add to cart</button>
+              </div>  
         </div>
     </div>
     
@@ -239,6 +297,7 @@ function addToCart(name, price) {
 </body>
 
 </html>
+
 
 
 
