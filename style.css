@@ -14,7 +14,7 @@ body {
 }
 
 input[type="radio"] {
- accent-color: #353535;
+ accent-color: black;
 }
 
 s{
@@ -380,6 +380,7 @@ label{
 }
   
 }
+
 
 
 
