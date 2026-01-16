@@ -89,22 +89,22 @@ ul li a{
     font-size: 18px;
     font-family: 'DM Sans';
     color: #ff3d57;
-    background-color: #fffbeb;
+    background-color: #f5f5f5;
     margin: -3rem 0 0 0.2rem;
 }
 
 .aboutbtn:hover{
     color:#f5f5f5;
+    border: 1px solid;
     background-color: #ff3d57;
     transition-duration: 0.3s;
-    border: 1px solid;
 }
 
 .shopbtn:hover{
     color:#f5f5f5;
+    border: 1px solid;
     background-color: #ff3d57;
     transition-duration: 0.3s;
-    border: 1px solid;
 }
 
 .mainimg{
@@ -381,6 +381,7 @@ label{
 }
   
 }
+
 
 
 
