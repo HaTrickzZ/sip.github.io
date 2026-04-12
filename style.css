@@ -28,6 +28,11 @@ ul{
  margin: 0;
 }
 
+nav{
+  position: sticky;
+  top: 0;
+}
+
 ul li{
 float: right;
 }
