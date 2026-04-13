@@ -24,8 +24,9 @@ s{
 
 ul{
  list-style-type: none;
- padding: 0;
+ padding: 0 0 3.5rem 0 ;
  margin: 0;
+background-color:#f0f0f0;
 }
 
 nav{
@@ -156,11 +157,31 @@ ul li a{
   border-radius: 25px;
 }
 
-.heading{
+.offimgdiv{
   text-align: center;
-  font-size: 64px;
-  color:#353535;
-  margin: 5rem 0 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.offimg{
+  display: none;
+  height: auto;
+  width: 95vw;
+  text-align: center;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
+}
+
+.offimga{
+  display: block;
+  height: auto;
+  width: 95vw;
+  text-align: center;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub-head-div{
@@ -371,11 +392,24 @@ label{
   border-radius: 25px;
 }
 
-.heading{
+.offimg{
+  display: block;
+  height: auto;
+  width: 95vw;
   text-align: center;
-  font-size: 46px;
-  color:#353535;
-  margin: 3rem 0 0 0;
+  border-radius: 12.5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.offimga{
+  display: none;
+  height: auto;
+  width: 95vw;
+  text-align: center;
+  border-radius: 25px;
+  justify-content: center;
+  align-items: center;
 }
 
 .sub-heading{
