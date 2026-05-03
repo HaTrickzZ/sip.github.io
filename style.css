@@ -428,6 +428,18 @@ label{
   color:#353535;
   margin: 1rem 0 0 0;
 }
+
+.footerbg{
+  position: absolute;
+  width: 100vw;
+  height: 300px;
+  object-fit: cover;
+  object-position: top; 
+  overflow: hidden;
+  margin: -5rem 0 0rem 0;
+  z-index: -100;
+  background-size: cover;
+}
   
 }
 
