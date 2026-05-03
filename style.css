@@ -356,6 +356,15 @@ label{
 }
 
 @media (max-width: 600px) {
+
+ul li a{
+  display: block;
+  text-decoration: none;
+  padding: 12px;
+  margin: 16px 0 0 5px;
+  color: #ff3d57;
+}
+  
   .maintxt{
     font-family: 'HumaneSemBd', sans-serif;
     font-size: 100px;
