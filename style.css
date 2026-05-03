@@ -5,6 +5,18 @@
   font-style: normal;
 }
 
+i[class^="fi-br-"]:before, i[class*=" fi-br-"]:before, span[class^="fi-br-"]:before, span[class*="fi-br-"]:before {
+font-family: uicons-bold-rounded !important;
+font-style: normal;
+font-weight: normal !important;
+font-variant: normal;
+text-transform: none;
+line-height: 0;
+font-size: 6px;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
 body {
   font-family: 'DM Sans';
   color: #ff3d57;
