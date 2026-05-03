@@ -5,17 +5,6 @@
   font-style: normal;
 }
 
-i[class^="fi-br-"]:before, i[class*=" fi-br-"]:before, span[class^="fi-br-"]:before, span[class*="fi-br-"]:before {
-font-family: uicons-bold-rounded !important;
-font-style: normal;
-font-weight: normal !important;
-font-variant: normal;
-text-transform: none;
-line-height: 0;
-font-size: 6px;
--webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-}
 
 body {
   font-family: 'DM Sans';
@@ -99,9 +88,10 @@ ul li a{
     margin: -3rem 0.2rem 0 0;
 }
 
-.fi-br-arrow-up-right {
-  font-size: 12px;
-}
+.fi-br-arrow-up-right:before {
+    content: "\e108";
+  font-size: 6px;
+    }
 
 .aboutbtn{
     border: 1px solid;
