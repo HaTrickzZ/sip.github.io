@@ -87,6 +87,10 @@ ul li a{
     margin: -3rem 0.2rem 0 0;
 }
 
+.fi-br-arrow-up-right {
+  font-size: 12px;
+}
+
 .aboutbtn{
     border: 1px solid;
     border-radius: 25px;
