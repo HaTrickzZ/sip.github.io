@@ -432,7 +432,7 @@ label{
 .footerbg{
   position: absolute;
   width: 100vw;
-  height: 170px;
+  height: 160px;
   object-fit: cover;
   object-position: top; 
   overflow: hidden;
@@ -445,6 +445,13 @@ label{
   height: 130px;
   width: 130px;
  object-fit: cover;
+}
+
+.copyright{
+  padding:0;
+  margin: -1.3rem 0 0 0.8rem;
+  color: #ffffff;
+  font-size: 12px;
 }
   
 }
