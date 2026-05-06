@@ -90,7 +90,7 @@ ul li a{
 
 .fi-br-arrow-up-right:before {
     content: "\e108";
-  font-size: 6px;
+  font-size: 12px;
     }
 
 .aboutbtn{
@@ -370,6 +370,11 @@ ul li a{
   margin: 16px 6px 0  0;
   color: #ff3d57;
 }
+
+  .fi-br-arrow-up-right:before {
+    content: "\e108";
+  font-size: 8px;
+    }
   
   .maintxt{
     font-family: 'HumaneSemBd', sans-serif;
