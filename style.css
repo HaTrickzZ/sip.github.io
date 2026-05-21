@@ -125,33 +125,90 @@ ul li a{
   pointer-events: none;
 }
 
-.footer{
+footer{
+  margin: 0;
   padding: 0;
-  margin: 0 ;
+}
+
+.footer-heading {
+  font-size: 15px;
+  color: #FFFFFF;
+  opacity: 75%;
+  font-weight: bold;
+}
+
+.footer-links {
+  font-size: 25px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 .footerbg{
   position: absolute;
   width: 100vw;
-  height: 300px;
+  height: 630px;
   object-fit: cover;
   object-position: top; 
   overflow: hidden;
-  margin: -5rem 0 0rem 0;
+  margin: -10rem 0 0rem 0;
   z-index: -100;
   background-size: cover;
 }
 
+.top-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8rem;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+.bottom-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 2rem 0 2rem;
+}
+
 .footer-img{
-  height: 200px;
-  width: 200px;
- object-fit: cover;
+  height: 280px;
+  width: 280px;
+}
+
+.cuppa {
+  width: 700px;
+  height: 350px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.cup {
+  width: 600px;
+  height: 800px;
+  transform: rotate(24deg);
+}
+
+.copyright-div {
+  margin: -2rem 0 0 1rem;
 }
 
 .copyright{
   padding:0;
-  margin: -1.3rem 0 0 0;
+  margin: -1.3rem 0 0 1rem;
   color: #ffffff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.terms{
+  padding:0;
+  font-size: 1.2rem;
+  margin: -1.3rem 0 0 1rem;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 .topimg{
@@ -360,6 +417,100 @@ label{
   margin: 0;
 }
 
+@media (max-width: 1220px) {
+  .bottom-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0rem 0 0rem;
+}
+
+.cuppa {
+  width: 500px;
+  height: 350px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.cup {
+  width: 430px;
+  height: 700px;
+  transform: rotate(24deg);
+}
+
+}
+
+@media (max-width: 955px) {
+  
+  .top-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 7rem;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+  .bottom-footer{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.footer-img{
+  height: 180px;
+  width: 180px;
+}
+
+.copyright{
+  padding:0;
+  margin: -1rem 0 0 0.5rem;
+  color: #ffffff;
+  text-align: center;
+  font-size: 0.7rem;
+}
+
+.terms{
+  padding:0;
+  font-size: 0.7rem;
+  margin: -1.3rem 0 0 0.5rem;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.copyright-div {
+  margin: -1.5rem 0 0 0.8rem;
+}
+
+.cuppa {
+  width: 350px;
+  height: 250px;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.cup {
+  width: 300px;
+  height: 500px;
+  transform: rotate(24deg);
+}
+
+.footerbg{
+  position: absolute;
+  width: 100vw;
+  height: 481px;
+  object-fit: cover;
+  object-position: top; 
+  overflow: hidden;
+  margin: -7rem 0 0rem 0;
+  z-index: -100;
+  background-size: cover;
+}
+
+}
+
 @media (max-width: 600px) {
 
 ul li a{
@@ -451,11 +602,11 @@ ul li a{
 .footerbg{
   position: absolute;
   width: 100vw;
-  height: 170px;
+  height: 200px;
   object-fit: cover;
   object-position: top; 
   overflow: hidden;
-  margin: -1.8rem 0 0rem 0;
+  margin: -3rem 0 0rem 0;
   z-index: -100;
   background-size: cover;
 }
@@ -466,23 +617,80 @@ ul li a{
  object-fit: cover;
 }
 
-.copyright{
+.top-footer{
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: center;;
+  gap: 2rem;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+.footer-heading {
+  font-size: 10px;
+  color: #FFFFFF;
+  opacity: 75%;
+  font-weight: bold;
+}
+
+.footer-links {
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.top-footer-section {
+  text-align: center;
+}
+
+.copyright-div {
+  margin: -1.5rem 0 0 0.2rem;
+}
+
+.terms{
   padding:0;
-  margin: -1.3rem 0 0 0.8rem;
+  font-size: 0.7rem;
+  margin: -1.3rem 0 0 0.2rem;
   color: #ffffff;
-  font-size: 12px;
+  text-align: center;
+  text-decoration: underline;
+  cursor: pointer;
 }
-  
+
+  .bottom-footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
 }
 
+.footerbg{
+  position: absolute;
+  width: 100vw;
+  height: 614px;
+  object-fit: cover;
+  object-position: top; 
+  overflow: hidden;
+  margin: -7rem 0 0rem 0;
+  z-index: -100;
+  background-size: cover;
+}
 
+}
 
-
-
-
-
-
-
+@media (max-width: 352px) {
+  .footerbg{
+  position: absolute;
+  width: 100vw;
+  height: 747px;
+  object-fit: cover;
+  object-position: top; 
+  overflow: hidden;
+  margin: -7rem 0 0rem 0;
+  z-index: -100;
+  background-size: cover;
+}
+}
 
 
 
