@@ -482,6 +482,7 @@ label{
 
 .copyright-div {
   margin: -1.5rem 0 0 0.8rem;
+  position: absolute;
 }
 
 .cuppa {
@@ -508,7 +509,6 @@ label{
   z-index: -100;
   background-size: cover;
 }
-
 }
 
 @media (max-width: 600px) {
@@ -599,29 +599,28 @@ ul li a{
   margin: 1rem 0 0 0;
 }
 
-.footerbg{
-  position: absolute;
-  width: 100vw;
-  height: 200px;
-  object-fit: cover;
-  object-position: top; 
-  overflow: hidden;
-  margin: -3rem 0 0rem 0;
-  z-index: -100;
-  background-size: cover;
-}
-
 .footer-img{
-  height: 130px;
-  width: 130px;
+  height: 150px;
+  width: 150px;
  object-fit: cover;
 }
 
 .top-footer{
-  display: flexbox;
+  display: flex;
   flex-wrap: wrap;
-  justify-content: center;;
-  gap: 2rem;
+  justify-content: flex-start;
+  gap: 2rem ;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+.bottom-footer{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin: 0;
+}
+
+.top-footer-section {
   margin: 0 1.5rem 0 1.5rem;
 }
 
@@ -633,18 +632,23 @@ ul li a{
 }
 
 .footer-links {
-  font-size: 16px;
+  font-size: 20px;
   color: #FFFFFF;
   font-weight: bold;
   text-decoration: none;
 }
 
-.top-footer-section {
+.copyright{
+  padding:0;
+  margin: -1rem 0 0 0.3rem;
+  color: #ffffff;
   text-align: center;
+  font-size: 0.7rem;
 }
 
 .copyright-div {
-  margin: -1.5rem 0 0 0.2rem;
+  position: absolute;
+  margin: -1rem 0 0 0.5rem;
 }
 
 .terms{
@@ -657,17 +661,12 @@ ul li a{
   cursor: pointer;
 }
 
-  .bottom-footer{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-}
+  
 
 .footerbg{
   position: absolute;
   width: 100vw;
-  height: 614px;
+  height: 462px;
   object-fit: cover;
   object-position: top; 
   overflow: hidden;
@@ -676,13 +675,45 @@ ul li a{
   background-size: cover;
 }
 
+.cuppa {
+  width: 250px;
+  height: 250px;
+  margin: 0px;
+  overflow: hidden;
+  z-index: -100;
 }
 
-@media (max-width: 352px) {
+.cup {
+  width: 420px;
+  height: 400px;
+  transform: rotate(-24deg);
+  
+}
+
+.insider {
+  margin: 4rem 0 0 0;
+}
+}
+
+@media (max-width: 497px) {
   .footerbg{
   position: absolute;
   width: 100vw;
-  height: 747px;
+  height: 562px;
+  object-fit: cover;
+  object-position: top; 
+  overflow: hidden;
+  margin: -5rem 0 0rem 0;
+  z-index: -100;
+  background-size: cover;
+}
+}
+
+@media (max-width: 333px) {
+  .footerbg{
+  position: absolute;
+  width: 100vw;
+  height: 727px;
   object-fit: cover;
   object-position: top; 
   overflow: hidden;
@@ -691,6 +722,7 @@ ul li a{
   background-size: cover;
 }
 }
+
 
 
 
