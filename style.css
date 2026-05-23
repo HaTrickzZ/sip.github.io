@@ -219,7 +219,7 @@ footer{
 
 .viddiv{
   text-align: center;
-   margin: 3rem 0 8rem 0;
+   margin: 3rem 0 12rem 0;
 }
 
 .vid{
@@ -572,6 +572,11 @@ ul li a{
   border-radius: 25px;
 }
 
+.viddiv{
+  text-align: center;
+   margin: 3rem 0 8rem 0;
+}
+  
 .offimg{
   display: block;
   height: auto;
