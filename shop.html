@@ -74,9 +74,9 @@
               <p class="item-name">Peri-Peri Alfaham<img class="veg" src="Component 4.svg"></p>
               <b><span class="price" id="oreoPrice">&#8377;150</span></b>
               <b><s><span class="mrp" id="priceofff"></span><br></s></b>
-              <label><input type="radio" name="periperialfaham_size" value="quarter" data-price="₹150" data-mrp="" checked>Quarter</label>
-              <label><input type="radio" name="periperialfaham_size" value="half" data-price="₹260" data-mrp="₹300">Half</label>
-              <label><input type="radio"name="periperialfaham_size" value="full" data-price="₹500" data-mrp="₹600">Full</label>
+              <label><input type="radio" name="periperialfaham_size" value="quarter" data-price="₹150" data-mrp="" data-save="" onclick="hideSave(this);" checked>Quarter</label>
+              <label><input type="radio" name="periperialfaham_size" value="half" data-price="₹260" data-mrp="₹300" data-save="SAVE &#8377;10" onclick="showSave(this)">Half</label>
+              <label><input type="radio"name="periperialfaham_size" value="full" data-price="₹500" data-mrp="₹600" data-save="SAVE &#8377;100" onclick="showSave(this)">Full</label>
               <button class="add-cart" type="button">Add to cart</button>
             </div>
           </div>
@@ -2587,6 +2587,15 @@ function addToCart(name, price) {
   cart.push({ name, price });
   localStorage.setItem("cart", JSON.stringify(cart));
   alert("Added to cart");
+}
+
+    function showSave(x) {
+    document.querySelector('.savetxt').innerHTML = x.dataset.save;
+    document.querySelector('.save').style.display = 'flex';
+}
+
+function hideSave() {
+document.querySelector('.save').style.display = 'none';
 }
 </script>
 </body>
