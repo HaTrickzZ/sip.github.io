@@ -344,6 +344,28 @@ background-color: #f5f5f5;
   color:#adadad;
 }
 
+.save {
+  display: none;
+  height: 21px;
+  width: 70px;
+  background-color: rgb(60, 255, 143, 23%);
+  border-radius: 6.25px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 0 6px;
+}
+
+.savetxt {
+  color: #2ECC71;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.inline-mrp {
+  display: inline-flex;
+}
+
 .add-cart{
   border: 1px solid;
   cursor: pointer;
