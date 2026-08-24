@@ -780,6 +780,10 @@ ul li a{
 .insider {
   margin: 4rem 0 0 0;
 }
+
+  .popup-container {
+    scale: 0.5;
+}
 }
 
 @media (max-width: 497px) {
