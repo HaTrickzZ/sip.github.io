@@ -13,6 +13,50 @@ body {
   padding: 0;
 }
 
+.popup-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.popup-div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 480px;
+    background-color: white;
+    color: #252525;
+    border-radius: 25px;
+    animation: moveit 3.1s;
+}
+
+.popup-txt {
+    margin: 1rem 0 0 0;
+}
+.popup-des {
+    margin: 0rem 0 1rem 0;
+}
+.popup-view {
+    margin: 1rem 0 1rem 0;
+    border: none;
+    color: #006209;
+    background-color: #2ECC71;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 10px 30px 10px 30px;
+}
+
+@keyframes moveit {
+    0%{opacity: 0;transform: translateY(0px);}
+    10%{opacity: 1;transform: translateY(100px)}
+    90%{opacity: 1;transform: translateY(100px)}
+    100%{opacity: 0;transform: translateY(0px)}
+}
+
 
 input[type='radio'] {
  accent-color: black;
