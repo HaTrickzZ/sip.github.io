@@ -41,7 +41,7 @@
                 <p class="item-name">Freak Shake<img class="veg" src="Component 2.svg"></p>
             <span class="price"><b>&#8377;150</b></span>
             <span class="mrp"><s><b></b></s></span><br>
-            <button class="add-cart" onclick="addToCart('Freak Shake', 120);run()" >Add to cart</button>
+            <button class="add-cart" onclick="addToCart('Freak Shake', 120);run();" >Add to cart</button>
             </div>
         </div>
 
@@ -51,7 +51,7 @@
                 <p class="item-name">Sharjah Shake<img class="veg" src="Component 2.svg"></p>
                 <span class="price"><b>&#8377;80</b></span>
                 <span class="mrp"><s><b></b></s></span><br>
-                <button class="add-cart" onclick="addToCart('Sharjah Shake', 80)" >Add to cart</button>
+                <button class="add-cart" onclick="addToCart('Sharjah Shake', 80);run();" >Add to cart</button>
               </div>  
             </div>
 
@@ -61,7 +61,7 @@
                 <p class="item-name">Belgian Chocolate<img class="veg" src="Component 2.svg"></p>
                 <span class="price"><b>&#8377;90</b></span>
                 <span class="mrp"><s><b></b></s></span><br>
-                <button class="add-cart" onclick="addToCart('Belgian Chocolate', 90)" >Add to cart</button>
+                <button class="add-cart" onclick="addToCart('Belgian Chocolate', 90);run();" >Add to cart</button>
               </div>  
             </div>
 
@@ -71,7 +71,7 @@
                 <p class="item-name">Virgin Mojito<img class="veg" src="Component 2.svg"></p>
                 <span class="price"><b>&#8377;80</b></span>
                 <span class="mrp"><s><b></b></s></span><br>
-                <button class="add-cart" onclick="addToCart('Virgin Mojito', 80)" >Add to cart</button>
+                <button class="add-cart" onclick="addToCart('Virgin Mojito', 80);run();" >Add to cart</button>
               </div>  
             </div>
         
@@ -2593,6 +2593,7 @@ function addToCart(name, price) {
   let cart = JSON.parse(localStorage.getItem("cart")) || [];
   cart.push({ name, price });
   localStorage.setItem("cart", JSON.stringify(cart));
+  run();
 }
 
 </script>
