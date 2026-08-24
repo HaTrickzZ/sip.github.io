@@ -15,6 +15,13 @@
 </head>
 <body>
     <nav>
+        <div class="popup-container" id="popup">
+            <div class="popup-div" >
+            <h1 class="popup-txt">Item added to cart!</h1>
+            <p  class="popup-des">Your item has been added to cart</p>
+             <button class="popup-view">View Cart</button>
+            </div>
+        </div>
         <ul>
             <li><a href="cart"><i class="fi fi-rr-shopping-cart"></i></a></li>
             <li><a href="shop"><i class="fi fi-sr-shop"></i></a></li>
@@ -2589,6 +2596,13 @@ function addToCart(name, price) {
   alert("Added to cart");
 }
 
+</script>
+<script>
+            function run() {
+                const popup = document.getElementById('popup');
+                popup.style.display = "flex";
+                setTimeout(() => {popup.style.display = 'none';}, 3000);
+            }
 </script>
 </body>
 
