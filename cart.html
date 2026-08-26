@@ -39,12 +39,28 @@
   
   <textarea name="item_name" id="orderDetails" readonly required></textarea>
   <br>
-  <input type="radio" name="user_ship" value="Home Delivery" id="home" required>
-  <label for="home">Home Delivery</label>
-  <input type="radio" name="user_ship" value="Dine In" id="dine">
-  <label for="dine">Dine In</label>
-  <input type="radio" name="user_ship" value="Take Away" id="take">
-  <label for="take">Take Away</label>
+  <div class="order-type-container">
+            <div class="order-type-div">
+                <div class="order-txt-div">
+                    <h1 class="order-type-txt">Order Type</h1>
+                    <p class="order-type-des">Select Order type</p>
+                </div>
+                <div class="order-select">
+                    <button type="button" name="user_ship" class="home-btn order-type-btn" onclick="activate()">
+                        <input class="radios" type="radio" name="user_ship" value="Home Delivery" id="home" required>
+                        Delivery
+                    </button>
+                    <button type="button" name="user_ship" class="dine-btn order-type-btn" onclick="activatea()">
+                        <input class="radios" type="radio" name="user_ship" value="Dine In" id="dine" >
+                        Dine In
+                    </button>
+                    <button type="button" name="user_ship" class="take-btn order-type-btn" onclick="activateb()">
+                        <input class="radios" type="radio" name="user_ship" value="Take Away" id="take">
+                        Take Away
+                    </button>
+                </div>
+            </div>
+        </div>
   <p class="info">Free delivery on orders above ₹399</p>
   <button type="submit" class="place">Place Order</button>
 </form>
@@ -119,7 +135,43 @@ console.log(Object.fromEntries(new FormData(this)));
     })
 });
 </script>
-    
+    <script>
+            function run() {
+                const popup = document.getElementById('popup');
+                popup.style.display = "flex";
+                setTimeout(() => {popup.style.display = 'none';}, 3000);
+            }
+            function activate() {
+                    let elementActive = document.querySelector('.home-btn');
+                    elementActive.classList.add('order-type-active');
+                    let elementActivea = document.querySelector('.dine-btn');
+                    elementActivea.classList.remove('order-type-active');
+                    let elementActiveb = document.querySelector('.take-btn');
+                    elementActiveb.classList.remove('order-type-active');
+                    document.getElementById('home').checked = true;
+
+
+            }
+            function activatea() {
+                    let elementActive = document.querySelector('.home-btn');
+                    elementActive.classList.remove('order-type-active');
+                    let elementActivea = document.querySelector('.dine-btn');
+                    elementActivea.classList.add('order-type-active');
+                    let elementActiveb = document.querySelector('.take-btn');
+                    elementActiveb.classList.remove('order-type-active');
+                    document.getElementById('dine').checked = true;
+            }
+
+            function activateb() {
+                    let elementActive = document.querySelector('.home-btn');
+                    elementActive.classList.remove('order-type-active');
+                    let elementActivea = document.querySelector('.dine-btn');
+                    elementActivea.classList.remove('order-type-active');
+                    let elementActiveb = document.querySelector('.take-btn');
+                    elementActiveb.classList.add('order-type-active');
+                    document.getElementById('take').checked = true;   
+            }
+ </script>
 </body>
 
 </html>
