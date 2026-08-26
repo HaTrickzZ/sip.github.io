@@ -53,6 +53,46 @@ body {
     cursor: pointer;
 }
 
+.submit-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.submit-div {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 480px;
+    background-color: white;
+    color: #252525;
+    border-radius: 25px;
+    animation: moveit 3.1s;
+   box-shadow: 2px 5px 15px #06060619;
+}
+
+.submit-txt {
+    margin: 1rem 0 0 0;
+}
+.submit-des {
+    margin: 0rem 0 1rem 0;
+}
+.submit-view {
+    font-family: 'DM Sans';
+    margin: 1rem 0 1rem 0;
+    border: none;
+    color: #006209;
+    background-color: #2ECC71;
+    font-size: 18px;
+    border-radius: 7px;
+    padding: 10px 30px 10px 30px;
+    cursor: pointer;
+}
+
 @keyframes moveit {
     0%{opacity: 1;transform: translateY(-100px);animation-timing-function: cubic-bezier(1,0,.02,.99)}
     10%{opacity: 1;transform: translateY(100px);}
