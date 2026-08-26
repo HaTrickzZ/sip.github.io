@@ -15,6 +15,13 @@
 </head>
 <body>
     <nav>
+        <div class="submit-container" id="submit">
+            <div class="submit-div" >
+            <h1 class="submit-txt">Order Sent!</h1>
+            <p  class="submit-des">Your order has been sent</p>
+             <button class="submit-view">Shop more</button>
+            </div>
+        </div>
         <ul>
             <li><a href="cart"><i class="fi fi-sr-shopping-cart"></i></a></li>
             <li><a href="shop"><i class="fi fi-rr-shop"></i></a></li>
@@ -103,11 +110,16 @@ console.log(Object.fromEntries(new FormData(this)));
     
   emailjs.sendForm("service_46j5geq", "template_fc8k19y", this)
     .then(() => {
-      alert("Order sent");
+      function submitRun() {
+                const submit = document.getElementById('submit');
+                submit.style.display = "flex";
+                setTimeout(() => {submit.style.display = 'none';}, 3000);
+            }
       localStorage.removeItem("cart");
     })
 });
 </script>
+    
 </body>
 
 </html>
