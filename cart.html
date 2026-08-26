@@ -91,12 +91,12 @@
 <script>
 emailjs.init("qGFwKrrtYU_feJxA9");
 
-// Load cart
+
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 document.getElementById("orderDetails").value =
   cart.map((i, n) => `${n+1}. ${i.name} - ₹${i.price}`).join("\n");
 
-// Submit
+    
 document.getElementById("orderForm").addEventListener("submit", function(e) {
   e.preventDefault();
 console.log(Object.fromEntries(new FormData(this)));
