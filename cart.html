@@ -62,7 +62,7 @@
             </div>
         </div>
   <p class="info">Free delivery on orders above ₹399</p>
-  <button type="submit" class="place" onclick="submitRun();">Place Order</button>
+  <button id="submitrun" type="submit" class="place" onclick="submitRun();">Place Order</button>
 </form>
 
     </div>
@@ -127,9 +127,9 @@ console.log(Object.fromEntries(new FormData(this)));
   emailjs.sendForm("service_46j5geq", "template_fc8k19y", this)
     .then(() => {
       function submitRun() {
-                const submit = document.getElementById('submit');
-                submit.style.display = "flex";
-                setTimeout(() => {submit.style.display = 'none';}, 3000);
+                const submitThis = document.getElementById('submitrun');
+                submitThis.style.display = "flex";
+                setTimeout(() => {submitThis.style.display = 'none';}, 3000);
             }
       localStorage.removeItem("cart");
     })
