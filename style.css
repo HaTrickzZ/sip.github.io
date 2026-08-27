@@ -895,13 +895,18 @@ ul li a{
 }
 
   .order-type-div {
-    height: 180px;
-    width: 580px;
+    height: 170px;
+    width: 570px;
     background-color: #ffffff;
     color: #353535;
     border-radius: 25px;
     scale: 0.6;
 }
+
+  .submit-container {
+    scale: 0.7;
+}
+  
 }
 
 @media (max-width: 497px) {
