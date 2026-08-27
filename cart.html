@@ -127,7 +127,7 @@ console.log(Object.fromEntries(new FormData(this)));
   emailjs.sendForm("service_46j5geq", "template_fc8k19y", this)
     .then(() => {
       function submitRun() {
-                const submitThis = document.getElementById('submitrun');
+                let submitThis = document.getElementById('submitrun');
                 submitThis.style.display = "flex";
                 setTimeout(() => {submitThis.style.display = 'none';}, 3000);
             }
