@@ -15,7 +15,7 @@
 </head>
 <body>
     <nav>
-        <div class="submit-container" id="submit">
+        <div class="submit-container" id="submitrun">
             <div class="submit-div" >
             <h1 class="submit-txt">Order Sent!</h1>
             <p  class="submit-des">Your order has been sent</p>
@@ -62,7 +62,7 @@
             </div>
         </div>
   <p class="info">Free delivery on orders above ₹399</p>
-  <button id="submitrun" type="submit" class="place" onclick="submitRun();">Place Order</button>
+  <button type="submit" class="place" onclick="submitRun();">Place Order</button>
 </form>
 
     </div>
@@ -136,11 +136,6 @@ console.log(Object.fromEntries(new FormData(this)));
 });
 </script>
     <script>
-            function run() {
-                const popup = document.getElementById('popup');
-                popup.style.display = "flex";
-                setTimeout(() => {popup.style.display = 'none';}, 3000);
-            }
             function activate() {
                     let elementActive = document.querySelector('.home-btn');
                     elementActive.classList.add('order-type-active');
