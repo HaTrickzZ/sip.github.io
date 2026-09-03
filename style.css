@@ -579,6 +579,7 @@ label{
     border-radius: 25px;
     font-size: 24px;
     position: relative;
+    cursor: pointer;
 }
 
 .order-type-btn:hovr {
