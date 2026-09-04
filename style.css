@@ -580,6 +580,9 @@ label{
     font-size: 24px;
     position: relative;
     cursor: pointer;
+    scale: 0.9;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(.2,.87,.38,.97);
 }
 
 .order-type-btn:hovr {
