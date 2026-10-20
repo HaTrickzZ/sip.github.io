@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="favstyle.css">
+    <link rel="icon" type="image/x-icon" href="sip favicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+    <title>Sip The Juice Shop</title>
+</head>
+<body>
+    <nav>
+        <div class="submit-container" id="submitrun">
+            <div class="submit-div" >
+            <h1 class="submit-txt">Order Sent!</h1>
+            <p  class="submit-des">Your order has been sent</p>
+             <button class="submit-view">Shop more</button>
+            </div>
+        </div>
+        <ul>
+            <li><a href="cart"><i class="fi fi-sr-shopping-cart"></i></a></li>
+            <li><a href="shop"><i class="fi fi-rr-shop"></i></a></li>
+            <li class="home"><a href="https://sipthejuiceshop.com" class="index"><img src="sip logo top.png" class="topimg"></a></li><br>
+        </ul>
+    </nav><br>
+    
+    <div class="container">
+            <div class="wishlist-container" id="product-div">
+                <div class="wishlist-image-div">
+                    <img src="C:\Users\moham\Downloads\1x_web_20260619051543329627_1440x300jpg.jpg" class="wishlist-img">
+                </div>
+                <div class="wishlist-txt-div">
+                    <div class="favitem"><span class="favitem-txt">FAVOURITE</span></div>
+                    <div class="main-txt-div">
+                        <div>
+                            <span class="main-txt">Single Patty Burger</span><br>
+                            <span class="sub-txt">1 single chicken patty burger </span>
+                        </div>
+                        <div>
+                            <img src="C:\Users\moham\Downloads\Component 2.svg" class="veg">
+                        </div>
+                    </div>
+                    <div class="size-div">
+                        <span class="size-txt">Size</span>
+                        <div class="size-background">
+                            <div class="back-thing" id="box"></div>
+                            <button class="size-a size" data-price="129" onclick="back(this)">Quarter</button>
+                            <button class="size-b size" data-price="139" onclick="backThis(this)">Half</button>
+                            <button class="size-c size" data-price="149" onclick="backThisOne(this)">Full</button>
+                        </div>
+                    </div>
+                    <div class="quantity-div">
+                        <span class="quantity-txt">Quantity</span><br>
+                        <div class="quantity-background">
+                            <button class="quantity-dec quantity" onclick="elementDec(this)">-</button>
+                            <span class="quantity-display" data-number="1" id="display">1</span>
+                            <button class="quantity-inc quantity" onclick="elementInc(this)">+</button>
+                        </div>
+                    </div>
+                    <div class="price-div">
+                        <span class="rupee">₹<span class="price-main" id="main-price" data-maxprice="129">129</span></span>
+                        <s>₹<span class="price-off" id="off-price" >169</span></s><br>
+                        <button class="submit-odr" onclick="run()">Add <i class="fi fi-rr-shopping-cart-add"></i></button>
+                    </div>
+                </div>
+                
+            </div>     
+    </div>
+
+    <footer>
+        <div class="footerbg-div">
+            <img class="footerbg" src="Component 999.svg">
+        </div>
+        <div class="footer">
+            <div class="top-footer">
+                <div class="top-footer-section">
+                    <span class="footer-heading">PAGES</span>
+                    <li><a href="https://sipthejuiceshop.com" class="footer-links">Home</a></li>
+                    <li><a href="shop" class="footer-links">Shop</a></li>
+                    <li><a href="cart" class="footer-links">Cart</a></li>
+                </div>
+                <div class="top-footer-section footer-b">
+                    <span class="footer-heading">SOCIALS</span>
+                    <li><a href="https://www.instagram.com/sip_the_juice_shop" class="footer-links">Instagram</a></li>
+                    <li><a href="https://www.facebook.com/sipthejuiceshop" class="footer-links">Facebook</a></li>
+                    <li><a href="https://www.youtube.com/@sipthejuiceshop" class="footer-links">Youtube</a></li>
+                </div>
+                <div class="top-footer-section ">
+                    <span class="footer-heading">CONTACT</span>
+                    <li><a href="tel:+919526557177" class="footer-links">Phone</a></li>
+                    <li><a href="mailto:sipthejuiceshop@gmail.com" class="footer-links">Email</a></li>
+                    <li><a href="https://maps.app.goo.gl/pu9yKFdpv7UH3yje9" class="footer-links">Location</a></li>
+                </div>
+            </div>
+            <div class="bottom-footer">
+                <div class="insider">
+                    <div style="text-align: center;">
+                        <img class="footer-img" src="sip logo bw.png"><br>
+                    </div>
+                    <div class="copyright-div">
+                        <span class="copyright">© 2026 SipTheJuiceShop. All rights reserved.</span><br>
+                        <span><a href="#" class="terms">Privacy Policy</a></span>
+                        <span><a href="#" class="terms">Terms & Conditions</a></span>
+                        <span><a href="#" class="terms">Franchise</a></span>
+                        
+                    </div>
+                </div>
+                <div class="cuppa">
+                    <img src="drink cup bruh.svg" class="cup">
+                </div>
+            </div>  
+        </div>
+    </footer>
+   <script>
+
+
+        //let increase = 1;//
+        //let mainPrice = Number(document.querySelector(".price-main").innerHTML);
+        let mrpPrice = Number(document.getElementById("off-price").innerHTML)
+
+        function back(btn) {
+            let card = btn.closest(".wishlist-container");
+            let box = card.querySelector('.back-thing');
+            let inc = card.querySelector('.quantity-display');
+            let maxPrice = card.querySelector('.price-main');
+            box.style.transform = "TranslateX(0rem)";
+            box.style.padding = "14px 36px";
+            let quantitySize = card.querySelector('.size-a');
+            let mainPriceBro = Number(quantitySize.dataset.price);
+            let increaseBro = Number(inc.dataset.number);
+            card.querySelector(".price-main").innerHTML = mainPriceBro * increaseBro;
+            maxPrice.dataset.maxprice = mainPriceBro;
+        }
+
+        function backThis(btn) {
+            let card = btn.closest(".wishlist-container");
+            let box = card.querySelector('.back-thing');
+            let inc = card.querySelector('.quantity-display');
+            let maxPrice = card.querySelector('.price-main');
+            box.style.transform = "TranslateX(5rem)";
+            box.style.padding = "14px 25px";
+            let quantitySize = card.querySelector('.size-b');
+            let mainPriceBro = Number(quantitySize.dataset.price);
+            let increaseBro = Number(inc.dataset.number);
+            card.querySelector('.price-main').innerHTML = mainPriceBro * increaseBro;
+            maxPrice.dataset.maxprice = mainPriceBro;
+        }
+
+        function backThisOne(btn) {
+            let card = btn.closest(".wishlist-container");
+            let box = card.querySelector('.back-thing');
+            let inc = card.querySelector('.quantity-display');
+            let maxPrice = card.querySelector('.price-main');
+            box.style.transform = "translateX(8.7rem)";
+            box.style.padding = "14px 20px";
+            let quantitySize = card.querySelector('.size-c');
+            let mainPriceBro = Number(quantitySize.dataset.price);
+            let increaseBro = Number(inc.dataset.number);
+            card.querySelector(".price-main").innerHTML = mainPriceBro * increaseBro;
+            maxPrice.dataset.maxprice = mainPriceBro;
+        }
+        
+        //Number(document.querySelector(".price-main").innerHTML)
+        function elementInc(btn) {
+            let card = btn.closest(".wishlist-txt-div");
+           let inc = card.querySelector('.quantity-display');
+           let Mprice = card.querySelector('.price-main');
+           let mrp = card.querySelector('.price-off');
+           let mainPriceBro = Number(Mprice.dataset.maxprice);
+           let increaseBro = Number(inc.dataset.number) || 1;
+           if (increaseBro < 10) {
+            increaseBro += 1;
+           }
+           inc.dataset.number = increaseBro;
+            inc.innerHTML = increaseBro;
+            Mprice.innerHTML = mainPriceBro * increaseBro;  
+            mrp.innerHTML = mrpPrice * increaseBro;
+        }
+
+        function elementDec(btn) {
+            let card = btn.closest(".wishlist-txt-div");
+           let inc = card.querySelector('.quantity-display');
+           let Mprice = card.querySelector('.price-main');
+           let mrp = card.querySelector('.price-off');
+           let mainPriceBro = Number(Mprice.dataset.maxprice);
+           let increaseBro = Number(inc.dataset.number) || 1;
+           if (increaseBro > 1) {
+            increaseBro -= 1;
+           }
+           inc.dataset.number = increaseBro;
+            inc.innerHTML = increaseBro;
+            Mprice.innerHTML = mainPriceBro * increaseBro;
+            mrp.innerHTML = mrpPrice * increaseBro;
+        }
+    </script>
+    <script>
+            function run() {
+                const popup = document.getElementById('popup');
+                popup.style.display = "flex";
+                setTimeout(() => {popup.style.display = 'none';}, 3000);
+            }
+        </script>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
