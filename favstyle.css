@@ -143,6 +143,7 @@ body {
     padding: 6px 14px;
     background-color: transparent;
     cursor: pointer;
+    font-family: 'DM Sans';
 }
 
 .size-b {
@@ -154,6 +155,7 @@ body {
     padding: 6px 14px;
     background-color: transparent;
     cursor: pointer;
+    font-family: 'DM Sans';
 }
 
 .size-c {
@@ -165,6 +167,7 @@ body {
     padding: 6px 14px;
     background-color: transparent;
     cursor: pointer;
+    font-family: 'DM Sans';
 }
 
 .quantity-txt {
