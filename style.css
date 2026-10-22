@@ -94,8 +94,8 @@ body {
 }
 
 @keyframes moveit {
-    0%{opacity: 1;transform: translateY(-100px);animation-timing-function: cubic-bezier(1,0,.02,.99)}
-    10%{opacity: 1;transform: translateY(100px);}
+    0%{opacity: 1;transform: translateY(-100px);blur(5px);}
+    10%{opacity: 1;transform: translateY(100px);blur(0);}
     90%{opacity: 1;transform: translateY(100px);filter: blur(0);}
     100%{opacity: 1;transform: translateY(-100px);filter: blur(5px);}
 }
